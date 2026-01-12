@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herat Gallery</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        /* navbar */
+        .sec1{
+            width: 70%;
+            margin: auto;
+            border-radius: 50px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.318);
+            position: fixed;
+            right: 10%;
+            left: 10%;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            
+           
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        ul li{
+            display: inline;
+            padding: 20px;
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+           
+        }
+        ul li a:hover{
+            color: #c28b0a;
+        }
+        ul li a.active{
+            color: #c28b0a;
+        }
+        /* Hero section */
+        .sec2{
+            background-image: url(images/somaiya-images/bc-image/bc-image.jpg);
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay{
+            background-color: rgba(0, 0, 0, 0.492);
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- navbar -->
+     <section class="sec1">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Food</a></li>
+            <li><a href="">Attraction</a></li>
+            <li><a href="" class="active">Gallery</a></li>
+        </ul>
+
+     </section>
+     <!-- Hero section  -->
+      <section class="sec2">
+        <div class="hero-overlay">
+            <div class="hero-content">
+               <div class="hero-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa doloremque quaerat aliquid dolore tempore delectus animi pro
+                    vident, similique placeat iste fugiat vel rem, iusto velit. Esse, 
+                    minus hic! Repellendus, cumque.</p>
+               </div>
+               <div class="hero-photo">
+                <div class="photo-item">
+                    <img src="" alt="">
+                </div>
+               </div>
+
+            </div>
+        </div>
+
+      </section>
+
 </body>
 </html>
